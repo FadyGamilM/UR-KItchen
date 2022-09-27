@@ -6,4 +6,8 @@ public abstract class Entity
    protected Entity(){}
 
    public int Id {get; protected set;}
+   public DateTime CreatedAt {get; private set;} = DateTime.Now;
+   public DateTime UpdatedAt {get; private set;} = DateTime.Now;
+
+
 }
