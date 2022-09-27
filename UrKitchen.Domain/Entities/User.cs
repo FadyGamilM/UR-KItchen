@@ -7,12 +7,14 @@ public class User : Entity
       string firstName,
       string lastName,
       string email,
+      string phone,
       decimal? rate      
    )
    {
       this.FirstName = firstName;
       this.LastName = lastName;
       this.Email = email;
+      this.Phone = phone;
       this.Rate = rate;
    }
    
@@ -22,6 +24,7 @@ public class User : Entity
    public string LastName {get; private set;} 
 
    public string Email {get; private set;}
+   public string Phone {get; private set;}
 
    public decimal? Rate {get; private set;} = 0;
 
@@ -32,6 +35,7 @@ public class User : Entity
       string firstName,
       string lastName,
       string email,
+      string phone,
       decimal? rate
    )
    {
@@ -39,6 +43,7 @@ public class User : Entity
          firstName,
          lastName,
          email,
+         phone,
          rate
       );
       return user;
