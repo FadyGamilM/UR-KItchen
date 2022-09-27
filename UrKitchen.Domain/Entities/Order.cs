@@ -34,7 +34,7 @@ public class Order:Entity
    public string DeliveryLocation {get; private set;}
    public decimal TotalCost {get; private set;}
    public bool Delievered {get; private set;} = false;
-   public bool removed {get; private set;} = false;
+   public bool Removed {get; private set;} = false;
 
    //! Static Factory Method
    public static Order Create (
@@ -71,7 +71,7 @@ public class Order:Entity
    //! delete an order [soft delete]
    public Order Delete ()
    {
-      this.removed = true;
+      this.Removed = true;
       return this;
    }
 

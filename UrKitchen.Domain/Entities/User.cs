@@ -25,6 +25,8 @@ public class User : Entity
 
    public decimal? Rate {get; private set;} = 0;
 
+   public bool Removed {get; private set;} = false;
+
    //* Factory Method
    public static User Crate(
       string firstName,
@@ -40,5 +42,12 @@ public class User : Entity
          rate
       );
       return user;
+   }
+
+   //* method to remove a user [soft delete]
+   public User Delete()
+   {
+      this.Removed = true;
+      return this;
    }
 }

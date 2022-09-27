@@ -15,7 +15,7 @@ public class Meal : Entity
    public string MealName {get; private set;}
    public int ChiefId {get; private set;}
    public User Chief {get; private set;}
-   public bool status {get; private set;} = false;
+   public bool Removed {get; private set;} = false;
 
    public static Meal Create(
       string mealName,
@@ -34,7 +34,7 @@ public class Meal : Entity
    // method to soft delete the meal
    public Meal Delete()
    {
-      this.status = true;   
+      this.Removed = true;   
       return this;
    }
 
