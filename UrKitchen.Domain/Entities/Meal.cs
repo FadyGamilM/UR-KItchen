@@ -3,30 +3,25 @@ public class Meal : Entity
 {
    private Meal(
       string mealName,
-      int chiefId,
-      User chief
+      int chiefId
    )
    {
       this.MealName = mealName;
       this.ChiefId = chiefId;
-      this.Chief = chief;
    }
 
    public string MealName {get; private set;}
    public int ChiefId {get; private set;}
-   public User Chief {get; private set;}
    public bool Removed {get; private set;} = false;
 
    public static Meal Create(
       string mealName,
-      int chiefId,
-      User chief
+      int chiefId
    )
    {
       var meal = new Meal(
          mealName,
-         chiefId,
-         chief
+         chiefId
       );
       return meal;
    }

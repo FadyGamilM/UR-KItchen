@@ -1,0 +1,12 @@
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\bin\Debug\net6.0\UrKitchen.API.deps.json
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\bin\Debug\net6.0\UrKitchen.API.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\bin\Debug\net6.0\UrKitchen.API.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\obj\Debug\net6.0\UrKitchen.API.csproj.AssemblyReference.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\obj\Debug\net6.0\UrKitchen.API.GeneratedMSBuildEditorConfig.editorconfig
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\obj\Debug\net6.0\UrKitchen.API.AssemblyInfoInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\obj\Debug\net6.0\UrKitchen.API.AssemblyInfo.cs
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\obj\Debug\net6.0\UrKitchen.API.csproj.CoreCompileInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\obj\Debug\net6.0\UrKitchen.API.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\obj\Debug\net6.0\refint\UrKitchen.API.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\obj\Debug\net6.0\UrKitchen.API.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.API\obj\Debug\net6.0\ref\UrKitchen.API.dll

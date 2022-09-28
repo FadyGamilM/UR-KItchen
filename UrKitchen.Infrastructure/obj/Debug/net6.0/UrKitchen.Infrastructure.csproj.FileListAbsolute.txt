@@ -1,0 +1,12 @@
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\bin\Debug\net6.0\UrKitchen.Infrastructure.deps.json
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\bin\Debug\net6.0\UrKitchen.Infrastructure.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\bin\Debug\net6.0\UrKitchen.Infrastructure.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\obj\Debug\net6.0\UrKitchen.Infrastructure.csproj.AssemblyReference.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\obj\Debug\net6.0\UrKitchen.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\obj\Debug\net6.0\UrKitchen.Infrastructure.AssemblyInfoInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\obj\Debug\net6.0\UrKitchen.Infrastructure.AssemblyInfo.cs
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\obj\Debug\net6.0\UrKitchen.Infrastructure.csproj.CoreCompileInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\obj\Debug\net6.0\UrKitchen.Infrastructure.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\obj\Debug\net6.0\refint\UrKitchen.Infrastructure.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\obj\Debug\net6.0\UrKitchen.Infrastructure.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Infrastructure\obj\Debug\net6.0\ref\UrKitchen.Infrastructure.dll

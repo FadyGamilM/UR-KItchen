@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "UrKitchen.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/UrKitchen.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UrKitchen.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "UrKitchen.Domain/1.0.0": {
+      "type": "project",
+      "path": "../UrKitchen.Domain/UrKitchen.Domain.csproj",
+      "msbuildProject": "../UrKitchen.Domain/UrKitchen.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "UrKitchen.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\vip\\.nuget\\packages\\": {},
@@ -37,7 +56,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj": {
+              "projectPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,12 @@
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\bin\Debug\net6.0\UrKitchen.Persistance.deps.json
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\bin\Debug\net6.0\UrKitchen.Persistance.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\bin\Debug\net6.0\UrKitchen.Persistance.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\UrKitchen.Persistance.csproj.AssemblyReference.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\UrKitchen.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\UrKitchen.Persistance.AssemblyInfoInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\UrKitchen.Persistance.AssemblyInfo.cs
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\UrKitchen.Persistance.csproj.CoreCompileInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\UrKitchen.Persistance.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\refint\UrKitchen.Persistance.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\UrKitchen.Persistance.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\ref\UrKitchen.Persistance.dll

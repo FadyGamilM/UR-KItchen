@@ -1,0 +1,15 @@
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\bin\Debug\net6.0\UrKitchen.Application.deps.json
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\bin\Debug\net6.0\UrKitchen.Application.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\bin\Debug\net6.0\UrKitchen.Application.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\bin\Debug\net6.0\UrKitchen.Domain.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\bin\Debug\net6.0\UrKitchen.Domain.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\obj\Debug\net6.0\UrKitchen.Application.csproj.AssemblyReference.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\obj\Debug\net6.0\UrKitchen.Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\obj\Debug\net6.0\UrKitchen.Application.AssemblyInfoInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\obj\Debug\net6.0\UrKitchen.Application.AssemblyInfo.cs
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\obj\Debug\net6.0\UrKitchen.Application.csproj.CoreCompileInputs.cache
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\obj\Debug\net6.0\UrKitchen.Application.csproj.CopyComplete
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\obj\Debug\net6.0\UrKitchen.Application.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\obj\Debug\net6.0\refint\UrKitchen.Application.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\obj\Debug\net6.0\UrKitchen.Application.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Application\obj\Debug\net6.0\ref\UrKitchen.Application.dll
