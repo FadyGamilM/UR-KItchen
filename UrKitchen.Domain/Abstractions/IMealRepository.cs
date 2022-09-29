@@ -1,6 +1,6 @@
-using UrKitchen.Application.DTOs.Meal;
+using UrKitchen.Domain.DTOs.Meal;
 using UrKitchen.Domain.Entities;
-namespace UrKitchen.Application.IRepository;
+namespace UrKitchen.Domain.Abstractions;
 public interface IMealRepository 
 {
    //! Create new meal

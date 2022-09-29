@@ -1,6 +1,6 @@
 using UrKitchen.Domain.Entities;
-using UrKitchen.Application.DTOs.DinnerInvitation;
-namespace UrKitchen.Application.IRepository;
+using UrKitchen.Domain.DTOs.DinnerInvitation;
+namespace UrKitchen.Domain.Abstractions;
 public interface IDinnerInvitation 
 {
    //! Create new dinner invitation

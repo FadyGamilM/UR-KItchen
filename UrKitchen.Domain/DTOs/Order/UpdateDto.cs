@@ -1,4 +1,4 @@
-namespace UrKitchen.Application.DTOs.Order;
+namespace UrKitchen.Domain.DTOs.Order;
 public record UpdateDto(
    int clientId,
    int chiefId,

@@ -1,4 +1,4 @@
-namespace UrKitchen.Application.DTOs.User;
+namespace UrKitchen.Domain.DTOs.User;
 public record UpdateDto(
    string firstName,
    string lastName,

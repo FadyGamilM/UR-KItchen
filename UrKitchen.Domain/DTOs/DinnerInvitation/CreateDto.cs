@@ -1,4 +1,4 @@
-namespace UrKitchen.Application.DTOs.DinnerInvitation;
+namespace UrKitchen.Domain.DTOs.DinnerInvitation;
 public record CreateDto(
    string title,
    DateTime time,

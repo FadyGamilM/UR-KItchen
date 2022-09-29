@@ -1,6 +1,6 @@
-using UrKitchen.Application.DTOs.User;
+using UrKitchen.Domain.DTOs.User;
 using UrKitchen.Domain.Entities;
-namespace UrKitchen.Application.IRepository;
+namespace UrKitchen.Domain.Abstractions;
 public interface IUserRepository
 {
    //! Create new user 

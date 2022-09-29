@@ -1,4 +1,4 @@
-namespace UrKitchen.Application.DTOs.DinnerInvitation;
+namespace UrKitchen.Domain.DTOs.DinnerInvitation;
 public record UpdateDto(
    string title,
    DateTime time,

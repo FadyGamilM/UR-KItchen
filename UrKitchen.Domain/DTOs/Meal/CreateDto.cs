@@ -1,4 +1,4 @@
-namespace UrKitchen.Application.DTOs.Meal;
+namespace UrKitchen.Domain.DTOs.Meal;
 public record CreateDto(
    string mealName,
    int chiefId
