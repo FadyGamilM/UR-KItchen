@@ -4,14 +4,14 @@
     "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Persistance\\UrKitchen.Persistance.csproj": {}
   },
   "projects": {
-    "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Persistance\\UrKitchen.Persistance.csproj": {
+    "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Persistance\\UrKitchen.Persistance.csproj",
-        "projectName": "UrKitchen.Persistance",
-        "projectPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Persistance\\UrKitchen.Persistance.csproj",
+        "projectUniqueName": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj",
+        "projectName": "UrKitchen.Domain",
+        "projectPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj",
         "packagesPath": "C:\\Users\\vip\\.nuget\\packages\\",
-        "outputPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Persistance\\obj\\",
+        "outputPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,10 +42,75 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Persistance\\UrKitchen.Persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Persistance\\UrKitchen.Persistance.csproj",
+        "projectName": "UrKitchen.Persistance",
+        "projectPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Persistance\\UrKitchen.Persistance.csproj",
+        "packagesPath": "C:\\Users\\vip\\.nuget\\packages\\",
+        "outputPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj": {
+                "projectPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "MediatR": {
               "target": "Package",
               "version": "[10.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -54,6 +119,8 @@
               "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.6, )"
             }

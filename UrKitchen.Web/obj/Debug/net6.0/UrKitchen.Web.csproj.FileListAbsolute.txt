@@ -37,3 +37,6 @@ F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Web
 F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Web\obj\Debug\net6.0\UrKitchen.Web.pdb
 F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Web\obj\Debug\net6.0\UrKitchen.Web.genruntimeconfig.cache
 F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Web\obj\Debug\net6.0\ref\UrKitchen.Web.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Web\bin\Debug\net6.0\MediatR.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Web\bin\Debug\net6.0\MediatR.Contracts.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Web\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

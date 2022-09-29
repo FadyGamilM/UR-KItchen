@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using UrKitchen.Persistance.Models;
+using UrKitchen.Persistance.Configurations;
 namespace UrKitchen.Persistance.Data;
 public class AppDbContext : DbContext
 {
@@ -14,4 +15,16 @@ public class AppDbContext : DbContext
    public DbSet<Attendee> Attendees {get; set;}
    public DbSet<InvitationMeal> InvitationMeals {get; set;}
    public DbSet<OrderMeal> OrderMeals {get; set;}
+   public DbSet<ClientOrder> ClientOrders {get; set;}
+   public DbSet<ChiefOrder> ChiefOrders {get; set;}
+
+   protected override void OnModelCreating(ModelBuilder modelBuilder)
+   {
+      modelBuilder.ApplyConfiguration(new OrderMealsConfig());     
+      modelBuilder.ApplyConfiguration(new InvitationMealsConfig());
+      modelBuilder.ApplyConfiguration(new AttendeeConfig());
+      modelBuilder.ApplyConfiguration(new ClientOrderConfig());
+      modelBuilder.ApplyConfiguration(new ChiefOrderConfig());
+      modelBuilder.ApplyConfiguration(new MealConfig());
+   }
 }

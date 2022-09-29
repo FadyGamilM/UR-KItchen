@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using UrKitchen.Persistance;
+using UrKitchen.Persistance.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -14,6 +15,14 @@ var builder = WebApplication.CreateBuilder(args);
     var persistanceAssembly = typeof(UrKitchen.Persistance.AssemblyReference).Assembly;
     // ==> inject the MediatR as a service 
     builder.Services.AddMediatR(persistanceAssembly); 
+
+    //! Inject the Db Context and connect to the database
+    //*=> connect to postgres through the AppDbContext
+    builder.Services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>(
+        options => options.UseNpgsql(
+            builder.Configuration.GetConnectionString("conn")
+        )
+    );
 }
 
 

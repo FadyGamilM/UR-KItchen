@@ -7,6 +7,7 @@ public class DinnerInvitation
    public int CreatorId {get; set;}
    public User Creator { get; set;}
    public List<InvitationMeal> InvitationMeals {get; set;} = new ();
+   public List<Attendee> Attendees {get; set; } = new ();
    public DateTime Time { get;  set; }
    public string Location {get; set;}
    public bool Removed {get; set;}

@@ -10,3 +10,8 @@ F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Per
 F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\refint\UrKitchen.Persistance.dll
 F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\UrKitchen.Persistance.pdb
 F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\ref\UrKitchen.Persistance.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\bin\Debug\net6.0\UrKitchen.Persistance.runtimeconfig.json
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\bin\Debug\net6.0\UrKitchen.Domain.dll
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\bin\Debug\net6.0\UrKitchen.Domain.pdb
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\UrKitchen.Persistance.csproj.CopyComplete
+F:\__111 COMPUTER SCIENCE\4th CSE 2022\dotnet\UR-Kitchen\UrKitchen\UrKitchen.Persistance\obj\Debug\net6.0\UrKitchen.Persistance.genruntimeconfig.cache

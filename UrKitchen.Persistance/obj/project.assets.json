@@ -5,7 +5,7 @@
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Humanizer.dll": {}
+          "lib/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
@@ -94,7 +94,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
@@ -146,7 +146,7 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
@@ -276,6 +276,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "UrKitchen.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/UrKitchen.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UrKitchen.Domain.dll": {}
         }
       }
     }
@@ -721,13 +731,20 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "UrKitchen.Domain/1.0.0": {
+      "type": "project",
+      "path": "../UrKitchen.Domain/UrKitchen.Domain.csproj",
+      "msbuildProject": "../UrKitchen.Domain/UrKitchen.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "MediatR >= 10.0.1",
+      "Microsoft.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.6",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.6"
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.6",
+      "UrKitchen.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -760,7 +777,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj": {
+              "projectPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -776,6 +797,10 @@
           "MediatR": {
             "target": "Package",
             "version": "[10.0.1, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.6, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
