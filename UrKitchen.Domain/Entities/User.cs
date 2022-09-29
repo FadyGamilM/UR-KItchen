@@ -8,7 +8,7 @@ public class User : Entity
       string lastName,
       string email,
       string phone,
-      decimal? rate      
+      decimal rate      
    )
    {
       this.FirstName = firstName;
@@ -26,7 +26,7 @@ public class User : Entity
    public string Email {get; private set;}
    public string Phone {get; private set;}
 
-   public decimal? Rate {get; private set;} = 0;
+   public decimal Rate {get; private set;} = 0;
 
    public bool Removed {get; private set;} = false;
 
@@ -49,7 +49,7 @@ public class User : Entity
       string lastName,
       string email,
       string phone,
-      decimal? rate
+      decimal rate
    )
    {
       var user = new User(

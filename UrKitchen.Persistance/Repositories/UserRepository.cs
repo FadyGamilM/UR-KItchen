@@ -47,21 +47,95 @@ public class UserRepository : IUserRepository
    // get all users from db
    public async Task<IEnumerable<Domain.Entities.User>> GetAll()
    {
-      throw new NotImplementedException();
+      try
+      {
+         var DbUsers = await _context.Users.ToListAsync();
+         var users = new List<Domain.Entities.User>();
+         foreach(var DbUser in DbUsers)
+         {
+            var user = Domain.Entities.User.Crate(
+               DbUser.FirstName,
+               DbUser.LastName,
+               DbUser.Email,
+               DbUser.Phone, DbUser.Rate
+            );
+            users.Add(user);
+         }
+         return users;
+      } 
+      catch(Exception ex)
+      {
+         Console.WriteLine("[Persistance Layer - UserRepository] ", ex.Message);
+         return null;
+      }
    }
 
-   public Task<Domain.Entities.User> GetByEmail(string email)
+   public async Task<Domain.Entities.User> GetByEmail(string email)
    {
-      throw new NotImplementedException();
+      try
+      {
+         var DbUser = await _context
+                                          .Users
+                                          .Where(U => U.Email == email)
+                                          .FirstOrDefaultAsync();
+         var user = Domain.Entities.User.Crate(
+            DbUser.FirstName,
+            DbUser.LastName,
+            DbUser.Email,
+            DbUser.Phone, DbUser.Rate            
+         );
+         return user;
+      }
+      catch(Exception ex)
+      {
+         Console.WriteLine("[Persistance Layer - UserRepository] ", ex.Message);
+         return null;
+      }
    }
 
-   public Task<Domain.Entities.User> GetById(int id)
+   public async Task<Domain.Entities.User> GetById(int id)
    {
-      throw new NotImplementedException();
+      try
+      {
+         var DbUser = await _context
+                                          .Users
+                                          .FindAsync(id);
+         var user = Domain.Entities.User.Crate(
+            DbUser.FirstName,
+            DbUser.LastName,
+            DbUser.Email,
+            DbUser.Phone, DbUser.Rate            
+         );
+         return user;
+      }
+      catch(Exception ex)
+      {
+         Console.WriteLine("[Persistance Layer - UserRepository] ", ex.Message);         
+         return null;
+      }
    }
 
-   public Task<bool> Update(int id, Domain.Entities.User user)
+   public async Task<bool> Update(int id, Domain.Entities.User user)
    {
-      throw new NotImplementedException();
+      try
+      {
+         var DbUser = await _context
+                                          .Users
+                                          .FindAsync(id);
+         
+         DbUser.FirstName = user.FirstName;
+         DbUser.LastName = user.LastName;
+         DbUser.Email = user.Email;
+         DbUser.Phone = user.Phone;
+         DbUser.Rate = user.Rate;
+
+         await _context.SaveChangesAsync();
+         return true;
+      }
+      catch(Exception ex)
+      {
+         Console.WriteLine("[Persistance Layer - UserRepository] ", ex.Message);         
+         return false;
+      }
    }
 }
