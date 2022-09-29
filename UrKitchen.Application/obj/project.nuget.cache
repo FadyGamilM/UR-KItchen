@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "C8XEctXHcNXM4DFOnYjU/7vifZFYuUK63bS+C2dIa8zn30FG0Wq4Iu71Ia6mQ9jCTiR4pfXeIxbXLLc7Oisqyg==",
+  "dgSpecHash": "aWFuw9PblcheiSfLmDe4e0YH2LcUis4qiCIy7FIxIxsSUftrrWXSFsw4ci0sG/77Zl4yjLFVWQwwdTTZYdZ3VQ==",
   "success": true,
   "projectFilePath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Application\\UrKitchen.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vip\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
