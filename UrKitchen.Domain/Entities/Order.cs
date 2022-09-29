@@ -29,6 +29,14 @@ public class Order:Entity
    public bool Delievered {get; private set;} = false;
    public bool Removed {get; private set;} = false;
 
+   // we have to keep track of the the meals ids that are requested in this order 
+   // this has nothing to do with the way we map the relations in DB
+   // this is logical prespective only 
+   private readonly List<Meal> _Meals = new ();
+   // when we use .Add() we will use the private field, but for reading we can privde this public prop
+   // which satisfy more encapsulation
+   public IReadOnlyCollection<Meal> Meals => _Meals;
+
    //! Static Factory Method
    public static Order Create (
       int clientId,
@@ -61,6 +69,13 @@ public class Order:Entity
    public Order Delete ()
    {
       this.Removed = true;
+      return this;
+   }
+
+   //! Add meal to the order 
+   public Order AddMeal (Meal meal)
+   {
+      this._Meals.Add(meal);
       return this;
    }
 

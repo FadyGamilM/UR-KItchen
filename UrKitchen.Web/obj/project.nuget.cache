@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "4jhmNlVdVNWoH6H/ZWbKoYqC0Jf38vv4F4l63Uwju7w1pTGfUw9SI+bR/F6XLKE/YcpnYLLAaF+iVrAihm8e5w==",
+  "dgSpecHash": "iyzP4ggjP6x9aUicQiZp3WbkKXYb0YwPfLjX6Wk13plU0I2dUD88uRcA0Hcs5e69F0jeVQ4PUgZMELarB3utdw==",
   "success": true,
   "projectFilePath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Web\\UrKitchen.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vip\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.7\\microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.7\\microsoft.entityframeworkcore.analyzers.6.0.7.nupkg.sha512",

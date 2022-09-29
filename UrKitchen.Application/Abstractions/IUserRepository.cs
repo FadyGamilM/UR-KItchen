@@ -1,10 +1,10 @@
 using UrKitchen.Domain.DTOs.User;
 using UrKitchen.Domain.Entities;
-namespace UrKitchen.Domain.Abstractions;
+namespace UrKitchen.Application.Abstractions;
 public interface IUserRepository
 {
    //! Create new user 
-   Task<bool> Create(CreateDto userDto);
+   Task<bool> Create(User user);
 
    //! Get All Users
    Task<IEnumerable<User>> GetAll();
@@ -16,5 +16,5 @@ public interface IUserRepository
    Task<User> GetByEmail(string email);
    
    //! Update User By Given the user's id
-   Task<bool> Update(int id, UpdateDto userDto); 
+   Task<bool> Update(int id, User user); 
 }

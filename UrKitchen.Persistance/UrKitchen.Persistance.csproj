@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UrKitchen.Domain\UrKitchen.Domain.csproj" />
+    <ProjectReference Include="..\UrKitchen.Application\UrKitchen.Application.csproj" />
   </ItemGroup>
 
 </Project>

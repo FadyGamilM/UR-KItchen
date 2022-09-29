@@ -1,6 +1,6 @@
 using UrKitchen.Domain.Entities;
 using UrKitchen.Domain.DTOs.Attendee;
-namespace UrKitchen.Domain.Abstractions;
+namespace UrKitchen.Application.Abstractions;
 public interface IAttendeeRepository
 {
    //! Create new attendee 

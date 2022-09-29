@@ -22,6 +22,11 @@ public class DinnerInvitation : Entity
    public bool Removed {get; private set;}
    public bool Closed {get; private set;}
 
+   // the invitation has to include meals when its created
+   // also we can add more meals after we create an invitation
+   // but we can't create an invitation without meals
+   private List<Meal> _Meals = new ();
+   public IReadOnlyCollection<Meal> Meals => _Meals;
 
    public static DinnerInvitation Create(
       string title,
@@ -37,6 +42,12 @@ public class DinnerInvitation : Entity
    public DinnerInvitation Delete()
    {
       this.Removed = true;
+      return this;
+   }
+
+   public DinnerInvitation AddMeal(Meal meal)
+   {
+      this._Meals.Add(meal);
       return this;
    }
 }

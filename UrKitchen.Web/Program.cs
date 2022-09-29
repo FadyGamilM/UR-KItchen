@@ -1,12 +1,16 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using UrKitchen.Persistance;
+using UrKitchen.Persistance.Repositories;
+using UrKitchen.Application.Abstractions;
 using UrKitchen.Persistance.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 {
+    //! Configure the controllers from the API project
+    var ApiAssembly = typeof(UrKitchen.API.AssemblyReference).Assembly;
+    builder.Services.AddControllers().AddApplicationPart(ApiAssembly);
+
     //! the sdk default services
-    builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
@@ -23,6 +27,9 @@ var builder = WebApplication.CreateBuilder(args);
             builder.Configuration.GetConnectionString("conn")
         )
     );
+
+    //! Inject the Concrete implementation of the domain abstractions from the persistance layer [IRepo, Repo]
+    builder.Services.AddScoped<IUserRepository, UserRepository>();
 }
 
 

@@ -30,6 +30,19 @@ public class User : Entity
 
    public bool Removed {get; private set;} = false;
 
+   // user can create an order, so the user domain model 
+   // has to keep track of his orders, and also user can make orders 
+   // from others, so he has to keep track of his requested orders
+   //=> the order i have ordered from others
+   private List<Order> _CreatedOrders = new ();
+   public IReadOnlyCollection<Order> CreatedOrders => _CreatedOrders;
+   private List<Order> _RequestedOrders = new ();
+   public IReadOnlyCollection<Order> RequestedOrders => _RequestedOrders;
+
+   // invitations 
+   private List<DinnerInvitation> _Invitations = new();
+   public IReadOnlyCollection<DinnerInvitation> Invitations => _Invitations;
+
    //* Factory Method
    public static User Crate(
       string firstName,
@@ -55,4 +68,11 @@ public class User : Entity
       this.Removed = true;
       return this;
    }
+
+   //* use can make an order from others 
+   public Order RequestOrder (Order order)
+   {
+      throw new NotImplementedException();
+   }
+
 }

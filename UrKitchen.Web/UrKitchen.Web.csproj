@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.6">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -23,6 +24,8 @@
   <ItemGroup>
     <ProjectReference Include="..\UrKitchen.Domain\UrKitchen.Domain.csproj" />
     <ProjectReference Include="..\UrKitchen.Persistance\UrKitchen.Persistance.csproj" />
+    <ProjectReference Include="..\UrKitchen.API\UrKitchen.API.csproj" />
+    <ProjectReference Include="..\UrKitchen.Application\UrKitchen.Application.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 using UrKitchen.Domain.DTOs.Order;
 using UrKitchen.Domain.Entities;
-namespace UrKitchen.Domain.Abstractions;
+namespace UrKitchen.Application.Abstractions;
 public interface IOrderRepository
 {
    //! Create New Order  
