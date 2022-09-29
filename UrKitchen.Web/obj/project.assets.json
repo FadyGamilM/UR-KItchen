@@ -404,7 +404,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "MediatR": "10.0.1",
-          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.6",
           "UrKitchen.Domain": "1.0.0"
         },
         "compile": {

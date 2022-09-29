@@ -40,36 +40,6 @@ namespace UrKitchen.Persistance.Migrations
                     b.ToTable("Attendees");
                 });
 
-            modelBuilder.Entity("UrKitchen.Persistance.Models.ChiefOrder", b =>
-                {
-                    b.Property<int>("ChiefId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("ChiefId", "OrderId");
-
-                    b.HasIndex("OrderId");
-
-                    b.ToTable("ChiefOrders");
-                });
-
-            modelBuilder.Entity("UrKitchen.Persistance.Models.ClientOrder", b =>
-                {
-                    b.Property<int>("ClientId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("ClientId", "OrderId");
-
-                    b.HasIndex("OrderId");
-
-                    b.ToTable("ClientOrders");
-                });
-
             modelBuilder.Entity("UrKitchen.Persistance.Models.DinnerInvitation", b =>
                 {
                     b.Property<int>("Id")
@@ -153,6 +123,12 @@ namespace UrKitchen.Persistance.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("ChiefId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ClientId")
+                        .HasColumnType("integer");
+
                     b.Property<bool>("Delievered")
                         .HasColumnType("boolean");
 
@@ -173,6 +149,10 @@ namespace UrKitchen.Persistance.Migrations
                         .HasColumnType("numeric");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ChiefId");
+
+                    b.HasIndex("ClientId");
 
                     b.ToTable("Orders");
                 });
@@ -246,44 +226,6 @@ namespace UrKitchen.Persistance.Migrations
                     b.Navigation("Invitedmember");
                 });
 
-            modelBuilder.Entity("UrKitchen.Persistance.Models.ChiefOrder", b =>
-                {
-                    b.HasOne("UrKitchen.Persistance.Models.User", "Chief")
-                        .WithMany("ChiefOrders")
-                        .HasForeignKey("ChiefId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("UrKitchen.Persistance.Models.Order", "Order")
-                        .WithMany("ChiefOrders")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Chief");
-
-                    b.Navigation("Order");
-                });
-
-            modelBuilder.Entity("UrKitchen.Persistance.Models.ClientOrder", b =>
-                {
-                    b.HasOne("UrKitchen.Persistance.Models.User", "Client")
-                        .WithMany("ClientOrders")
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("UrKitchen.Persistance.Models.Order", "Order")
-                        .WithMany("ClientOrders")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Client");
-
-                    b.Navigation("Order");
-                });
-
             modelBuilder.Entity("UrKitchen.Persistance.Models.DinnerInvitation", b =>
                 {
                     b.HasOne("UrKitchen.Persistance.Models.User", "Creator")
@@ -325,6 +267,25 @@ namespace UrKitchen.Persistance.Migrations
                     b.Navigation("Chief");
                 });
 
+            modelBuilder.Entity("UrKitchen.Persistance.Models.Order", b =>
+                {
+                    b.HasOne("UrKitchen.Persistance.Models.User", "Chief")
+                        .WithMany("RequestedOrders")
+                        .HasForeignKey("ChiefId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UrKitchen.Persistance.Models.User", "Client")
+                        .WithMany("CreatedOrders")
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Chief");
+
+                    b.Navigation("Client");
+                });
+
             modelBuilder.Entity("UrKitchen.Persistance.Models.OrderMeal", b =>
                 {
                     b.HasOne("UrKitchen.Persistance.Models.Meal", "Meal")
@@ -360,10 +321,6 @@ namespace UrKitchen.Persistance.Migrations
 
             modelBuilder.Entity("UrKitchen.Persistance.Models.Order", b =>
                 {
-                    b.Navigation("ChiefOrders");
-
-                    b.Navigation("ClientOrders");
-
                     b.Navigation("OrderMeals");
                 });
 
@@ -371,11 +328,11 @@ namespace UrKitchen.Persistance.Migrations
                 {
                     b.Navigation("Attendees");
 
-                    b.Navigation("ChiefOrders");
-
-                    b.Navigation("ClientOrders");
+                    b.Navigation("CreatedOrders");
 
                     b.Navigation("Meals");
+
+                    b.Navigation("RequestedOrders");
                 });
 #pragma warning restore 612, 618
         }

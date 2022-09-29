@@ -3,22 +3,22 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using UrKitchen.Persistance.Models;
 namespace UrKitchen.Persistance.Configurations;
 
-public class ClientOrderConfig : IEntityTypeConfiguration<ClientOrder>
+public class OrderConfig : IEntityTypeConfiguration<Order>
 {
-   public void Configure(EntityTypeBuilder<ClientOrder> builder)
+   public void Configure(EntityTypeBuilder<Order> builder)
    {
-      builder.HasKey(CO => new {CO.ClientId, CO.OrderId});
+      builder.HasKey(O => O.Id);
       builder
-         .HasOne(CO => CO.Client)
-         .WithMany(client => client.ClientOrders)
+         .HasOne(O => O.Client)
+         .WithMany(client => client.CreatedOrders)
          .HasForeignKey(O => O.ClientId)
          .IsRequired(true)
          .OnDelete(DeleteBehavior.Cascade);
 
       builder
-         .HasOne(CO => CO.Order)
-         .WithMany(O => O.ClientOrders)
-         .HasForeignKey(O => O.OrderId)
+         .HasOne(O => O.Chief)
+         .WithMany(chief => chief.RequestedOrders)
+         .HasForeignKey(O => O.ChiefId)
          .IsRequired(true)
          .OnDelete(DeleteBehavior.Cascade);
    }

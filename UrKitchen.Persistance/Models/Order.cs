@@ -3,8 +3,10 @@ namespace UrKitchen.Persistance.Models;
 public class Order 
 {
    public int Id {get; set;}
-   public List<ClientOrder> ClientOrders {get; set;}
-   public List<ChiefOrder> ChiefOrders {get; set;}
+   public int ClientId {get; set;}
+   public User Client {get; set;}
+   public int ChiefId {get; set;}
+   public User Chief {get; set;}
    public List<OrderMeal> OrderMeals {get; set;} = new();
    public DateTime DelivryTime {get; set;}
    public decimal DeliveryCost {get; set;}
