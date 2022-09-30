@@ -1,10 +1,10 @@
-using UrKitchen.Domain.DTOs.User;
+using UrKitchen.Application.Contracts.User;
 using UrKitchen.Domain.Entities;
 namespace UrKitchen.Application.Abstractions;
 public interface IUserRepository
 {
    //! Create new user 
-   Task<bool> Create(User user);
+   Task<CreatedUser> Create(User user);
 
    //! Get All Users
    Task<IEnumerable<User>> GetAll();

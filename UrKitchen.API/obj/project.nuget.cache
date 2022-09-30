@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "XSxaNVeAbqyZiHQHo62PsUIcczeOa7gwrfyy2Ra3WEHjZ7VbxnpAsZHkY9r5EvBV7mI5Llz7nKTNoXubZUQn8A==",
+  "dgSpecHash": "RV+NnouYXnM76J4Hot4x0N8zYyxPYdt2bCW0X5r/JiSvqIQQvZKtsrgkz/H5PfkOEguUqibGKYfV1/1qbYDMDQ==",
   "success": true,
   "projectFilePath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.API\\UrKitchen.API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vip\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\vip\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

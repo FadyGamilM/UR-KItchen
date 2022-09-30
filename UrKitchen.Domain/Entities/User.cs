@@ -7,15 +7,13 @@ public class User : Entity
       string firstName,
       string lastName,
       string email,
-      string phone,
-      decimal rate      
+      string phone
    )
    {
       this.FirstName = firstName;
       this.LastName = lastName;
       this.Email = email;
       this.Phone = phone;
-      this.Rate = rate;
    }
    
    //* private properties for encapsulation 
@@ -44,20 +42,18 @@ public class User : Entity
    public IReadOnlyCollection<DinnerInvitation> Invitations => _Invitations;
 
    //* Factory Method
-   public static User Crate(
+   public static User Create(
       string firstName,
       string lastName,
       string email,
-      string phone,
-      decimal rate
+      string phone
    )
    {
       var user = new User(
          firstName,
          lastName,
          email,
-         phone,
-         rate
+         phone
       );
       return user;
    }

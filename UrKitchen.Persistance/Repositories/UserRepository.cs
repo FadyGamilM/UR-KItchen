@@ -1,6 +1,7 @@
 using UrKitchen.Application.Abstractions;
 using UrKitchen.Persistance.Models;
 using UrKitchen.Domain.Entities;
+using UrKitchen.Application.Contracts.User;
 using UrKitchen.Persistance.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,7 +17,7 @@ public class UserRepository : IUserRepository
    }
 
    // Create new user db instance
-   public async Task<bool> Create(Domain.Entities.User user)
+   public async Task<CreatedUser> Create(Domain.Entities.User user)
    {
       try
       {
@@ -35,12 +36,21 @@ public class UserRepository : IUserRepository
          await _context.Users.AddAsync(newUser);
          await _context.SaveChangesAsync();
 
-         return true;
+         var createdUser = new CreatedUser
+         {
+            Id = newUser.Id,
+            FirstName = newUser.FirstName,
+            LastName = newUser.LastName,
+            Email = newUser.Email,
+            Phone = newUser.Phone,
+            Rate = newUser.Rate
+         };
+         return createdUser;
       }
       catch(Exception ex)
       {
          Console.WriteLine("[Persistance Layer - UserRepository] ", ex.Message);
-         return false;
+         return null;
       }
    }
 
@@ -53,11 +63,11 @@ public class UserRepository : IUserRepository
          var users = new List<Domain.Entities.User>();
          foreach(var DbUser in DbUsers)
          {
-            var user = Domain.Entities.User.Crate(
+            var user = Domain.Entities.User.Create(
                DbUser.FirstName,
                DbUser.LastName,
                DbUser.Email,
-               DbUser.Phone, DbUser.Rate
+               DbUser.Phone
             );
             users.Add(user);
          }
@@ -78,11 +88,11 @@ public class UserRepository : IUserRepository
                                           .Users
                                           .Where(U => U.Email == email)
                                           .FirstOrDefaultAsync();
-         var user = Domain.Entities.User.Crate(
+         var user = Domain.Entities.User.Create(
             DbUser.FirstName,
             DbUser.LastName,
             DbUser.Email,
-            DbUser.Phone, DbUser.Rate            
+            DbUser.Phone          
          );
          return user;
       }
@@ -100,11 +110,11 @@ public class UserRepository : IUserRepository
          var DbUser = await _context
                                           .Users
                                           .FindAsync(id);
-         var user = Domain.Entities.User.Crate(
+         var user = Domain.Entities.User.Create(
             DbUser.FirstName,
             DbUser.LastName,
             DbUser.Email,
-            DbUser.Phone, DbUser.Rate            
+            DbUser.Phone          
          );
          return user;
       }

@@ -20,6 +20,10 @@ var builder = WebApplication.CreateBuilder(args);
     // ==> inject the MediatR as a service 
     builder.Services.AddMediatR(persistanceAssembly); 
 
+    //! Inejct services for Application layer
+    var applicationAssembly = typeof(UrKitchen.Application.ApplicationAssemblyReference).Assembly;
+    builder.Services.AddMediatR(applicationAssembly);
+
     //! Inject the Db Context and connect to the database
     //*=> connect to postgres through the AppDbContext
     builder.Services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>(

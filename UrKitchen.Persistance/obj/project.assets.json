@@ -305,6 +305,20 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "UrKitchen.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MediatR": "10.0.1",
+          "UrKitchen.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UrKitchen.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UrKitchen.Application.dll": {}
+        }
+      },
       "UrKitchen.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -796,6 +810,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "UrKitchen.Application/1.0.0": {
+      "type": "project",
+      "path": "../UrKitchen.Application/UrKitchen.Application.csproj",
+      "msbuildProject": "../UrKitchen.Application/UrKitchen.Application.csproj"
+    },
     "UrKitchen.Domain/1.0.0": {
       "type": "project",
       "path": "../UrKitchen.Domain/UrKitchen.Domain.csproj",
@@ -808,6 +827,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.6",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.6",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.6",
+      "UrKitchen.Application >= 1.0.0",
       "UrKitchen.Domain >= 1.0.0"
     ]
   },
@@ -842,6 +862,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Application\\UrKitchen.Application.csproj": {
+              "projectPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Application\\UrKitchen.Application.csproj"
+            },
             "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj": {
               "projectPath": "F:\\__111 COMPUTER SCIENCE\\4th CSE 2022\\dotnet\\UR-Kitchen\\UrKitchen\\UrKitchen.Domain\\UrKitchen.Domain.csproj"
             }

@@ -1,10 +1,10 @@
 using MediatR;
 using UrKitchen.Application.Abstractions;
 using UrKitchen.Application.Common;
-using UrKitchen.Application.UseCases.User.Queries;
+using UrKitchen.Application.UseCases.User.Queries.GetAllUsers;
 using UrKitchen.Domain;
 
-namespace UrKitchen.Application.UseCases.User.QueriesHandlers;
+namespace UrKitchen.Application.UseCases.User.Queries.GetAllUsers;
 
 public class GetUsersQueryHandler
    : IRequestHandler<GetUsersQuery, HandlersResponse<IEnumerable<Domain.Entities.User>>>
@@ -20,8 +20,11 @@ public class GetUsersQueryHandler
       var users = await _userRepo.GetAll();
 
       var response = new HandlersResponse<IEnumerable<Domain.Entities.User>>();
+
       response.Payload = users;
+
       response.IsSuccess = true;
+
       return response;      
    }
 }
